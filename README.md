@@ -18,26 +18,26 @@
    
    <img width="2558" height="591" alt="1" src="https://github.com/user-attachments/assets/bd3cdfd1-320b-456f-aeb3-94a6f0fd50b2" />
 
-3. I have decided to make two break-glass accounts to add redundancy and prevent a single point of failure. These accounts are special accounts that are excluded from normal security policies like conditional access and MFA, in case they get misconfigured and block everyone out. They are to be used in emergencies only.
+2. I have decided to make two break-glass accounts to add redundancy and prevent a single point of failure. These accounts are special accounts that are excluded from normal security policies like conditional access and MFA, in case they get misconfigured and block everyone out. They are to be used in emergencies only.
 
    <img width="2553" height="490" alt="2" src="https://github.com/user-attachments/assets/9cb784ac-4cfe-4fb8-b3aa-28d8ba183453" />
 
-5. I am now adding users to simulate real people accessing the cloud resources.
+3. I am now adding users to simulate real people accessing the cloud resources.
    
    <img width="2559" height="672" alt="3" src="https://github.com/user-attachments/assets/18b29447-9655-431d-8f05-24b8a77257fe" />
 
-7. Now I am making security groups and putting appropriate users into their respective groups. Group-based access lets you manage permissions at scale while limiting privilege creep and upholding least privilege.
+4. Now I am making security groups and putting appropriate users into their respective groups. Group-based access lets you manage permissions at scale while limiting privilege creep and upholding least privilege.
   
    These groups are dynamic and work by automation. These work by automatically putting you in a group based on the attributes that you can set. For example, one of my users department is Finance, and using this dynamic query (user.department -eq "Finance") it will automatically put this user in the Finance-Users security group.
    
    
    <img width="2555" height="601" alt="4" src="https://github.com/user-attachments/assets/700ce324-6618-4918-b6fb-6f0804ace0ef" /> 
 
-9. Here, I have given the Microsoft Entra P2 license to these groups. Giving licences to groups instead of by user is way more efficient and effective, simplifying licence management for scalability.
+5. Here, I have given the Microsoft Entra P2 license to these groups. Giving licences to groups instead of by user is way more efficient and effective, simplifying licence management for scalability.
    
     <img width="2559" height="787" alt="5" src="https://github.com/user-attachments/assets/c19ea421-825e-473d-9653-68b5be7e5657" />
 
-10. I have created more groups, and I am going to assign Azure AD/Entra roles to them. I have given IAM-Readers the Global reader role to allow auditing and reporting without risking accidental changes.
+6. I have created more groups, and I am going to assign Azure AD/Entra roles to them. I have given IAM-Readers the Global reader role to allow auditing and reporting without risking accidental changes.
    
     Next, I have given IT-User-Admins the User Administrator role to be able to create, update, delete users and groups, and reset passwords.
 
@@ -47,11 +47,11 @@
 
     <img width="2559" height="724" alt="6" src="https://github.com/user-attachments/assets/bc3549ac-70d5-47f5-b8db-6e4d301ec617" />
 
-12. In this screenshot, I have added an IAM test user to the IAM-Readers group. Now this user will have Global Reader access.
+7. In this screenshot, I have added an IAM test user to the IAM-Readers group. Now this user will have Global Reader access.
     
     <img width="2557" height="660" alt="7" src="https://github.com/user-attachments/assets/76d3cc1e-ba34-4839-8580-731efbaf5e65" />
 
-14. I have set up a resource group to manage access using groups instead of assigning roles to individual users.
+8. I have set up a resource group to manage access using groups instead of assigning roles to individual users.
 
     KY-IAM-Admin, which has the Owner Role, has full control over resource groups, useful for managing the resources
     
@@ -61,27 +61,27 @@
     
     <img width="2555" height="493" alt="8" src="https://github.com/user-attachments/assets/8f8d1918-da89-403f-9f9f-8b571092b6fc" />
 
-16. Here I am enforcing Multifactor authentication for all users
+9. Here I am enforcing Multifactor authentication for all users
     
     <img width="2555" height="761" alt="10" src="https://github.com/user-attachments/assets/3b33fae6-1ee1-49a5-aeb0-c8626277d906" />
 
-18. I am now going to create several conditional access policies. First, we have a policy name KY-01-Require-MFA-ALL-Users. Adding an extra layer of protection besides just a password.
+10. I am now going to create several conditional access policies. First, we have a policy name KY-01-Require-MFA-ALL-Users. Adding an extra layer of protection besides just a password.
     
     <img width="2540" height="487" alt="11" src="https://github.com/user-attachments/assets/c6c1d352-7b8a-4268-a869-893aec51daa9" />
 
-20. Next, I have created KY-02-Block-Legacy-Auth. Which prohibits sign-in attempts from older, less secure protocols, preventing attackers from bypassing MFA as legacy protocols cannot prompt for it.
+11. Next, I have created KY-02-Block-Legacy-Auth. Which prohibits sign-in attempts from older, less secure protocols, preventing attackers from bypassing MFA as legacy protocols cannot prompt for it.
     
     <img width="2557" height="519" alt="12" src="https://github.com/user-attachments/assets/d381ab89-9016-4595-b463-efb563b0c651" />
 
-21. Here we have our third policy named KY-03-Admins-Strong-Auth. Apply stricter rules for high-privilege accounts. The compromise of an admin account is much more damaging than a normal user account, as they can access sensitive data and grant permissions.
+12. Here we have our third policy named KY-03-Admins-Strong-Auth. Apply stricter rules for high-privilege accounts. The compromise of an admin account is much more damaging than a normal user account, as they can access sensitive data and grant permissions.
     
     <img width="2554" height="549" alt="13" src="https://github.com/user-attachments/assets/5ffe1482-9c8b-49ed-8858-d9a7411cd8d2" />
 
-22. Lastly, we have KY-04-High-Risk_Signins. To protect accounts when suspicious activity is detected, such as sign-ins from unusual locations or devices.
+13. Lastly, we have KY-04-High-Risk_Signins. To protect accounts when suspicious activity is detected, such as sign-ins from unusual locations or devices.
      
     <img width="2559" height="580" alt="14" src="https://github.com/user-attachments/assets/45ccc8bf-032e-4739-8788-d31d3e488dce" />
 
-23. I have set up Privileged Identity Management (PIM). I use PIM to enforce Just-In-Time (JIT) Access. It ensures least privilege, reduces the risk of permanent high-level access, provides audit trails, and integrates with MFA and Conditional Access for extra security.
+14. I have set up Privileged Identity Management (PIM). I use PIM to enforce Just-In-Time (JIT) Access. It ensures least privilege, reduces the risk of permanent high-level access, provides audit trails, and integrates with MFA and Conditional Access for extra security.
 
     I don't want the Admins to have permanent elevated access, they can activate the access only when needed, which reduces the attack surface
 
@@ -90,6 +90,7 @@
     - Require MFA
     - Require justification on assignment
     - Activation duration max 4 hours
+      
     
     <img width="2559" height="746" alt="15" src="https://github.com/user-attachments/assets/f78bdb09-5d65-4936-88b4-3efdcc69fc70" />
 
