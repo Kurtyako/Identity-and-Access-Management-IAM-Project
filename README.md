@@ -59,25 +59,32 @@
     
     <img width="2555" height="493" alt="8" src="https://github.com/user-attachments/assets/8f8d1918-da89-403f-9f9f-8b571092b6fc" />
 
-15.  
-    <img width="2529" height="448" alt="9" src="https://github.com/user-attachments/assets/60dde71d-21f9-49bc-aa5d-fe0f28cae9bb" />
-
-16.
+16. Here I am enforcing Multifactor authentication for all users
+    
     <img width="2555" height="761" alt="10" src="https://github.com/user-attachments/assets/3b33fae6-1ee1-49a5-aeb0-c8626277d906" />
 
-17.
+18. I am now going to create several conditional access policies. First, we have a policy name KY-01-Require-MFA-ALL-Users. Adding an extra layer of protection besides just a password. 
     <img width="2540" height="487" alt="11" src="https://github.com/user-attachments/assets/c6c1d352-7b8a-4268-a869-893aec51daa9" />
 
-18.
+19. Next, I have created KY-02-Block-Legacy-Auth. Which prohibits sign-in attempts from older, less secure protocols, preventing attackers from bypassing MFA as legacy protocols cannot prompt for it. 
     <img width="2557" height="519" alt="12" src="https://github.com/user-attachments/assets/d381ab89-9016-4595-b463-efb563b0c651" />
 
-19.
+20. Here we have our third policy named KY-03-Admins-Strong-Auth. Apply stricter rules for high-privilege accounts. The compromise of an admin account is much more damaging than a normal user account, as they can access sensitive data and grant permissions.
     <img width="2554" height="549" alt="13" src="https://github.com/user-attachments/assets/5ffe1482-9c8b-49ed-8858-d9a7411cd8d2" />
 
-20.
+21. Lastly, we have KY-04-High-Risk_Signins. To protect accounts when suspicious activity is detected, such as sign-ins from unusual locations or devices. 
     <img width="2559" height="580" alt="14" src="https://github.com/user-attachments/assets/45ccc8bf-032e-4739-8788-d31d3e488dce" />
 
-21.
+22. I have set up Privileged Identity Management (PIM). I use PIM to enforce Just-In-Time (JIT) Access. It ensures least privilege, reduces the risk of permanent high-level access, provides audit trails, and integrates with MFA and Conditional Access for extra security.
+
+    I don't want the Admins to have permanent elevated access, they can activate the access only when needed, which reduces the attack surface
+
+    In this screenshot, I have set up Just-In-Time (JIT) Access with the limitations as:
+
+    - Require MFA
+    - Require justification on assignment
+    - Activation duration max 4 hours
+    
     <img width="2559" height="746" alt="15" src="https://github.com/user-attachments/assets/f78bdb09-5d65-4936-88b4-3efdcc69fc70" />
 
 
