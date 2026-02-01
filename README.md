@@ -26,7 +26,9 @@
    
    <img width="2559" height="672" alt="3" src="https://github.com/user-attachments/assets/18b29447-9655-431d-8f05-24b8a77257fe" />
 
-7. Now I am making security groups and putting appropriate users into their respective groups. Group-based access lets you manage permissions at scale while limiting privilege creep and upholding least privilege. These groups are dynamic and work by automation. These work by automatically putting you in a group based on the attributes that you can set. For example, one of my users department is Finance, and using this dynamic query (user.department -eq "Finance") it will automatically put this user in the Finance-Users security group.
+7. Now I am making security groups and putting appropriate users into their respective groups. Group-based access lets you manage permissions at scale while limiting privilege creep and upholding least privilege.
+  
+   These groups are dynamic and work by automation. These work by automatically putting you in a group based on the attributes that you can set. For example, one of my users department is Finance, and using this dynamic query (user.department -eq "Finance") it will automatically put this user in the Finance-Users security group.
    
    <img width="2555" height="601" alt="4" src="https://github.com/user-attachments/assets/700ce324-6618-4918-b6fb-6f0804ace0ef" /> 
 
@@ -34,7 +36,9 @@
    
     <img width="2559" height="787" alt="5" src="https://github.com/user-attachments/assets/c19ea421-825e-473d-9653-68b5be7e5657" />
 
-10. I have created more groups, and I am going to assign Azure AD/Entra roles to them. I have given IAM-Readers the Global reader role to allow auditing and reporting without risking accidental changes. Next, I have given IT-User-Admins the User Administrator role to be able to create, update, delete users and groups, and reset passwords. Lastly, for the Security-Readers, I have given them the Security Reader role to read security reports, alerts, and conditional access policies without being able to change any security settings. This is a great way to use least privilege principle and separation of duties.
+10. I have created more groups, and I am going to assign Azure AD/Entra roles to them. I have given IAM-Readers the Global reader role to allow auditing and reporting without risking accidental changes.
+   
+    Next, I have given IT-User-Admins the User Administrator role to be able to create, update, delete users and groups, and reset passwords. Lastly, for the Security-Readers, I have given them the Security Reader role to read security reports, alerts, and conditional access policies without being able to change any security settings. This is a great way to use least privilege principle and separation of duties.
 
     <img width="2559" height="724" alt="6" src="https://github.com/user-attachments/assets/bc3549ac-70d5-47f5-b8db-6e4d301ec617" />
 
