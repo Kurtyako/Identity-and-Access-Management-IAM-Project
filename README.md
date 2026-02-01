@@ -52,7 +52,9 @@
 13. I have set up a resource group to manage access using groups instead of assigning roles to individual users.
 
     KY-IAM-Admin, which has the Owner Role, has full control over resource groups, useful for managing the resources
+    
     KY-IAM-Contributors, which has the Contributor role, can create and manage resources, but cannot assign roles, useful for developers to work safely and prevent privilege escalation.
+    
     KY-IAM-Readers, which have the Reader role, has read only access to resources in the resource group, useful for auditing and monitoring.
     
     <img width="2555" height="493" alt="8" src="https://github.com/user-attachments/assets/8f8d1918-da89-403f-9f9f-8b571092b6fc" />
