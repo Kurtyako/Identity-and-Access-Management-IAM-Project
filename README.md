@@ -6,7 +6,7 @@ The objective of this project is to implement and manage a strong Identity and A
 
 ### Skills Learned
 
-Azure Active Directory (Azure AD): Configuring users, groups, and applications
+Azure Active Directory (Azure AD): Configuring users, groups, and applications.
 
 Role-Based Access Control (RBAC): Designing and implementing access policies for secure resource management.
 
@@ -30,6 +30,8 @@ Privileged Identity Management (PIM)
 Azure Conditional Access
 
 Azure AD Identity Protection
+
+
 
 
 
@@ -119,7 +121,13 @@ Azure AD Identity Protection
     <img width="2559" height="746" alt="15" src="https://github.com/user-attachments/assets/f78bdb09-5d65-4936-88b4-3efdcc69fc70" />
 
 
+## Project Summary: Identity and Access Management in Azure
 
+This project focuses on building a secure and efficient Identity and Access Management (IAM) system in Microsoft Azure. The goal is to make sure the right people have access to the right resources while keeping sensitive data safe. To achieve this, we use Azure Active Directory (Azure AD) to manage users and groups, Role-Based Access Control (RBAC) to assign permissions based on roles, and Multi-Factor Authentication (MFA) to add an extra layer of security.
+
+We also implement policies to control access based on conditions like user location or device, and monitor activity for any unusual behavior. Lastly, we have enforced  Privileged Identity Management (PIM) to reduce the risk of permanent high-level access by introducing Just-In-Time (JIT) Access.
+
+We now have an organization that has a scalable and secure IAM system that protects data, supports smooth collaboration, and makes managing access simple and reliable.
 
 
 
