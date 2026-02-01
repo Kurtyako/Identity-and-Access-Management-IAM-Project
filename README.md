@@ -1,14 +1,38 @@
 # Identity-and-Access-Management-IAM-Project
 
 ## Objective
-
+The objective of this project is to implement and manage a strong Identity and Access Management (IAM) system within the Microsoft Azure cloud environment. The project aims to ensure that users, groups, and applications have appropriate and secure access to organizational resources while minimizing security risks and maintaining operational efficiency.
 
 
 ### Skills Learned
 
+Azure Active Directory (Azure AD): Configuring users, groups, and applications
+
+Role-Based Access Control (RBAC): Designing and implementing access policies for secure resource management.
+
+Authentication & Security: Implementing Multi-Factor Authentication (MFA) and conditional access policies.
+
+Identity Lifecycle Management: Managing onboarding/offboarding, role changes, and automated provisioning of accounts.
 
 
 ### Tools Used
+
+Microsoft Entra ID
+
+Azure Active Directory (Azure AD)
+
+Azure Role-Based Access Control (RBAC)
+
+Azure MFA (Multi-Factor Authentication)
+
+Privileged Identity Management (PIM)
+
+Azure Conditional Access
+
+Azure AD Identity Protection
+
+
+
 
 
 
