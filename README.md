@@ -14,10 +14,10 @@
 
 ## Steps
 
-1. e
+1. First I will create a tenant in Microsoft Entra ID as it is the central identity authority for my Azure environment.
    <img width="2558" height="591" alt="1" src="https://github.com/user-attachments/assets/bd3cdfd1-320b-456f-aeb3-94a6f0fd50b2" />
 
-2.
+2. I have decided to make two break-glass accounts to add redundancy and prevent a single point of failure. These accounts are special accounts that are excluded from normal security policies like conditional access and MFA, in case they get misconfigured and block everyone out. They are to be used in emergencies only.
    <img width="2553" height="490" alt="2" src="https://github.com/user-attachments/assets/9cb784ac-4cfe-4fb8-b3aa-28d8ba183453" />
 
 3.
