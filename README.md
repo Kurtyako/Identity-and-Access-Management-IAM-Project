@@ -26,7 +26,7 @@
    
    <img width="2559" height="672" alt="3" src="https://github.com/user-attachments/assets/18b29447-9655-431d-8f05-24b8a77257fe" />
 
-7. Now I am making security groups and putting appropriate users into their respective groups. Group-based access lets you manage permissions at scale while limiting privilege creep and upholding least privilege. These groups are dynamic and work by automation. These work by automatically put you in a group based on the attributes that you can set. For example, one of my users departments is Finance, and using this dynamic query (user.department -eq "Finance") it will automatically put this user in the Finance-Users security group.
+7. Now I am making security groups and putting appropriate users into their respective groups. Group-based access lets you manage permissions at scale while limiting privilege creep and upholding least privilege. These groups are dynamic and work by automation. These work by automatically putting you in a group based on the attributes that you can set. For example, one of my users department is Finance, and using this dynamic query (user.department -eq "Finance") it will automatically put this user in the Finance-Users security group.
    
    <img width="2555" height="601" alt="4" src="https://github.com/user-attachments/assets/700ce324-6618-4918-b6fb-6f0804ace0ef" /> 
 
