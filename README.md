@@ -46,31 +46,36 @@
 
     <img width="2559" height="724" alt="6" src="https://github.com/user-attachments/assets/bc3549ac-70d5-47f5-b8db-6e4d301ec617" />
 
-12.
+12. In this screenshot, I have added an IAM test user to the IAM-Readers group. Now this user will have Global Reader access.
     <img width="2557" height="660" alt="7" src="https://github.com/user-attachments/assets/76d3cc1e-ba34-4839-8580-731efbaf5e65" />
 
-13.
+13. I have set up a resource group to manage access using groups instead of assigning roles to individual users.
+
+    KY-IAM-Admin, which has the Owner Role, has full control over resource groups, useful for managing the resources
+    KY-IAM-Contributors, which has the Contributor role, can create and manage resources, but cannot assign roles, useful for developers to work safely and prevent privilege escalation.
+    KY-IAM-Readers, which have the Reader role, has read only access to resources in the resource group, useful for auditing and monitoring.
+    
     <img width="2555" height="493" alt="8" src="https://github.com/user-attachments/assets/8f8d1918-da89-403f-9f9f-8b571092b6fc" />
 
-14.
+15.  
     <img width="2529" height="448" alt="9" src="https://github.com/user-attachments/assets/60dde71d-21f9-49bc-aa5d-fe0f28cae9bb" />
 
-15.
+16.
     <img width="2555" height="761" alt="10" src="https://github.com/user-attachments/assets/3b33fae6-1ee1-49a5-aeb0-c8626277d906" />
 
-16.
+17.
     <img width="2540" height="487" alt="11" src="https://github.com/user-attachments/assets/c6c1d352-7b8a-4268-a869-893aec51daa9" />
 
-17.
+18.
     <img width="2557" height="519" alt="12" src="https://github.com/user-attachments/assets/d381ab89-9016-4595-b463-efb563b0c651" />
 
-18.
+19.
     <img width="2554" height="549" alt="13" src="https://github.com/user-attachments/assets/5ffe1482-9c8b-49ed-8858-d9a7411cd8d2" />
 
-19.
+20.
     <img width="2559" height="580" alt="14" src="https://github.com/user-attachments/assets/45ccc8bf-032e-4739-8788-d31d3e488dce" />
 
-20.
+21.
     <img width="2559" height="746" alt="15" src="https://github.com/user-attachments/assets/f78bdb09-5d65-4936-88b4-3efdcc69fc70" />
 
 
