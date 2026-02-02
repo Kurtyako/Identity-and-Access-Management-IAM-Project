@@ -64,9 +64,11 @@ Azure AD Identity Protection
    These groups are dynamic and work by automation. These work by automatically putting you in a group based on the attributes that you can set. For example, one of my users department is Finance, and using this dynamic query (user.department -eq "Finance") it will automatically put this user in the Finance-Users security group.
    
    
-   <img width="2555" height="601" alt="4" src="https://github.com/user-attachments/assets/700ce324-6618-4918-b6fb-6f0804ace0ef" /> 
+   <img width="2555" height="601" alt="4" src="https://github.com/user-attachments/assets/700ce324-6618-4918-b6fb-6f0804ace0ef" />
 
-5. Here, I have given the Microsoft Entra P2 license to these groups. Giving licences to groups instead of by user is way more efficient and effective, simplifying licence management for scalability.
+## Give licenses to groups
+
+6. Here, I have given the Microsoft Entra P2 license to these groups. Giving licences to groups instead of by user is way more efficient and effective, simplifying licence management for scalability.
    
     <img width="2559" height="787" alt="5" src="https://github.com/user-attachments/assets/c19ea421-825e-473d-9653-68b5be7e5657" />
 
