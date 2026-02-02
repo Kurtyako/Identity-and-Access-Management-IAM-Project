@@ -44,6 +44,8 @@ Azure AD Identity Protection
    
    <img width="2558" height="591" alt="1" src="https://github.com/user-attachments/assets/bd3cdfd1-320b-456f-aeb3-94a6f0fd50b2" />
 
+##Identity Setup
+
 2. I have decided to make two break-glass accounts to add redundancy and prevent a single point of failure. These accounts are special accounts that are excluded from normal security policies like conditional access and MFA, in case they get misconfigured and block everyone out. They are to be used in emergencies only.
 
    <img width="2553" height="490" alt="2" src="https://github.com/user-attachments/assets/9cb784ac-4cfe-4fb8-b3aa-28d8ba183453" />
@@ -51,6 +53,8 @@ Azure AD Identity Protection
 3. I am now adding users to simulate real people accessing the cloud resources.
    
    <img width="2559" height="672" alt="3" src="https://github.com/user-attachments/assets/18b29447-9655-431d-8f05-24b8a77257fe" />
+
+##Role-Based Access Control (RBAC)
 
 4. Now I am making security groups and putting appropriate users into their respective groups. Group-based access lets you manage permissions at scale while limiting privilege creep and upholding least privilege.
   
@@ -87,9 +91,13 @@ Azure AD Identity Protection
     
     <img width="2555" height="493" alt="8" src="https://github.com/user-attachments/assets/8f8d1918-da89-403f-9f9f-8b571092b6fc" />
 
+##Multi-Factor Authentication (MFA)    
+
 9. Here I am enforcing Multifactor authentication for all users
     
     <img width="2555" height="761" alt="10" src="https://github.com/user-attachments/assets/3b33fae6-1ee1-49a5-aeb0-c8626277d906" />
+
+##Conditional Access Policies
 
 10. I am now going to create several conditional access policies. First, we have a policy name KY-01-Require-MFA-ALL-Users. Adding an extra layer of protection besides just a password.
     
@@ -106,6 +114,8 @@ Azure AD Identity Protection
 13. Lastly, we have KY-04-High-Risk_Signins. To protect accounts when suspicious activity is detected, such as sign-ins from unusual locations or devices.
      
     <img width="2559" height="580" alt="14" src="https://github.com/user-attachments/assets/45ccc8bf-032e-4739-8788-d31d3e488dce" />
+
+##Privileged Identity Management (PIM)
 
 14. I have set up Privileged Identity Management (PIM). I use PIM to enforce Just-In-Time (JIT) Access. It ensures least privilege, reduces the risk of permanent high-level access, provides audit trails, and integrates with MFA and Conditional Access for extra security.
 
