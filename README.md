@@ -70,7 +70,7 @@ Azure AD Identity Protection
    
     <img width="2559" height="787" alt="5" src="https://github.com/user-attachments/assets/c19ea421-825e-473d-9653-68b5be7e5657" />
 
- ## Azure RBAC Configuration
+ ## Azure Role-Based Access Control (RBAC) Configuration
 
 6. I have created more groups, and I am going to assign Azure AD/Entra roles to them. I have given IAM-Readers the Global reader role to allow auditing and reporting without risking accidental changes.
    
