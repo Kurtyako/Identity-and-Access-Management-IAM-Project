@@ -57,7 +57,7 @@ Azure AD Identity Protection
    
    <img width="2559" height="672" alt="3" src="https://github.com/user-attachments/assets/18b29447-9655-431d-8f05-24b8a77257fe" />
 
-## Role-Based Access Control (RBAC)
+## Create Security Groups
 
 4. Now I am making security groups and putting appropriate users into their respective groups. Group-based access lets you manage permissions at scale while limiting privilege creep and upholding least privilege.
   
@@ -69,6 +69,8 @@ Azure AD Identity Protection
 5. Here, I have given the Microsoft Entra P2 license to these groups. Giving licences to groups instead of by user is way more efficient and effective, simplifying licence management for scalability.
    
     <img width="2559" height="787" alt="5" src="https://github.com/user-attachments/assets/c19ea421-825e-473d-9653-68b5be7e5657" />
+
+ ## Azure RBAC Configuration
 
 6. I have created more groups, and I am going to assign Azure AD/Entra roles to them. I have given IAM-Readers the Global reader role to allow auditing and reporting without risking accidental changes.
    
