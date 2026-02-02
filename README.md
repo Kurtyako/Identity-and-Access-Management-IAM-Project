@@ -40,6 +40,9 @@ Azure AD Identity Protection
 
 ## Steps
 
+# Create / Verify Entra ID Tenant
+
+
 1. First I will create a tenant in Microsoft Entra ID as it is the central identity authority for my Azure environment.
    
    <img width="2558" height="591" alt="1" src="https://github.com/user-attachments/assets/bd3cdfd1-320b-456f-aeb3-94a6f0fd50b2" />
